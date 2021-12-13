@@ -16,14 +16,14 @@ public class OddEvenCheckerTest {
     @ParameterizedTest(name = "test odd number with four odd numbers (1, 300, -33, 5) ")
     @ValueSource(ints = {1, 300, -33, 5})
             public void testOddNumber(int number) {
-        assertTrue(Numbers.isOdd(number));
+        assertTrue(isOddNumber.isOdd(number));
     }
 
 
     @ParameterizedTest(name = "test even number with four even numbers (2, 400, -22, 6) ")
     @ValueSource(ints = {2, 400, -22, 6})
             public void testEvenNumber(int number) {
-        assertFalse(Numbers.isOdd(number));
+        assertFalse(isOddNumber.isOdd(number));
     }
 
 }
